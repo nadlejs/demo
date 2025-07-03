@@ -1,13 +1,14 @@
-import { tasks, ExecTask, PnpmTask, DeleteTask, configure } from "nadle";
+import { tasks, configure } from "nadle";
+
 import { createTask } from "./create-task.js";
 
 configure({
-	maxWorkers:4,
-})
+	maxWorkers: 3
+});
 
-tasks.register(...createTask("task-A-0", { subTaskCount: 3, subTaskDuration: 1500 }));
-tasks.register(...createTask("task-A-1", { subTaskCount: 3, subTaskDuration: 2000 }));
-tasks.register(...createTask("task-A-2", { subTaskCount: 3, subTaskDuration: 1200 }));
+tasks.register(...createTask("task-A-0", { subTaskCount: 3, subTaskDuration: 700 }));
+tasks.register(...createTask("task-A-1", { subTaskCount: 3, subTaskDuration: 1200 }));
+tasks.register(...createTask("task-A-2", { subTaskCount: 3, subTaskDuration: 1000 }));
 tasks
 	.register(
 		...createTask("task-A", {
@@ -79,4 +80,4 @@ tasks
 	.config({ dependsOn: ["task-A", "task-B"] });
 tasks
 	.register(...createTask("task-C", { subTaskCount: 3, subTaskDuration: 1000 }))
-	.config({ dependsOn: ["task-A", "task-B", "task-C-0", "task-C-1", "task-C-2", "task-C-3", "task-C-4", "task-C-5"] });
+	.config({ description: "Main task", dependsOn: ["task-A", "task-B", "task-C-0", "task-C-1", "task-C-2", "task-C-3", "task-C-4", "task-C-5"] });

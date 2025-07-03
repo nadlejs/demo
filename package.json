@@ -17,7 +17,7 @@
 		"husky": "^9.1.7",
 		"jiti": "^2.4.2",
 		"lint-staged": "^16.1.2",
-		"nadle": "^0.4.0",
+		"nadle": "https://pkg.pr.new/nadle@ec3a4d0",
 		"prettier": "^3.6.2",
 		"rimraf": "^6.0.1",
 		"tinyrainbow": "^2.0.0",
