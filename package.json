@@ -7,22 +7,22 @@
 		"start": "pnpm -r --parallel start"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.29.0",
-		"@microsoft/api-extractor": "^7.52.8",
-		"@nadle/eslint-config": "^1.0.0",
+		"@eslint/js": "^9.39.0",
+		"@microsoft/api-extractor": "^7.53.3",
+		"@nadle/eslint-config": "^1.0.2",
 		"@nadle/prettier-config": "^0.0.5",
 		"@nadle/ts-config": "^0.0.2",
-		"cspell": "^9.1.2",
-		"eslint": "^9.29.0",
+		"cspell": "^9.2.2",
+		"eslint": "^9.39.0",
 		"husky": "^9.1.7",
-		"jiti": "^2.4.2",
-		"lint-staged": "^16.1.2",
+		"jiti": "^2.6.1",
+		"lint-staged": "^16.2.6",
 		"nadle": "https://pkg.pr.new/nadle@ec3a4d0",
 		"prettier": "^3.6.2",
-		"rimraf": "^6.0.1",
+		"rimraf": "^6.1.0",
 		"tinyrainbow": "^2.0.0",
-		"typescript": "^5.8.2",
-		"typescript-eslint": "^8.35.0"
+		"typescript": "^5.9.3",
+		"typescript-eslint": "^8.46.3"
 	},
 	"engines": {
 		"node": ">=20"
